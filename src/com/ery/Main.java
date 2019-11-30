@@ -1,16 +1,31 @@
 package com.ery;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
-//        Fibonacci.writeFibonacci(10);
-//        int result = Factorial.calculateFactorial(4);
-//        System.out.println("\n" + result);
-//        System.out.println();
-//        BinarySearch.search(1);
-//
-//        System.out.println();
-//        System.out.println();
+
+        bubbleSort();
+
+        //TODO not ending
+        expressionParsing();
+
+
+    }
+
+
+    public static void expressionParsing(){
+        System.out.println(ExpressionParsing.parseExpressionToPrefix("a+b*c"));
+    }
+
+
+    public static void bubbleSort(){
+        int[] arr = {1,4,5,2,6,8,5,3};
+        System.out.println(Arrays.toString(BubbleSort.sort(arr)));
+    }
+
+    public static  void binaryTree(){
         TreeNode root = new TreeNode(5);
         TreeNode treeNode = new TreeNode(3);
         TreeNode treeNode1 = new TreeNode(4);
